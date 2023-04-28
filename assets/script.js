@@ -34,6 +34,7 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 
 // MILESTONE 0
+// create array of objects
 const teamArray = [
 	{
 		name: "Paul Hewson",
@@ -67,4 +68,10 @@ const teamArray = [
 	},
 ];
 
-console.log(teamArray);
+// MILESTONE 1:
+// for each member of the team, console.log name, role and string with photo file name
+
+for (let i = 0; i < teamArray.length; i++) {
+	let member = teamArray[i];
+	console.log(`${member.name}, ${member.role} - ${member.photo}`);
+}
