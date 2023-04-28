@@ -81,7 +81,29 @@ for (let i = 0; i < teamArray.length; i++) {
 
 // declare DOM variables
 const container = document.querySelector(".container");
-let card = document.createElement("div");
-let cardContent = `
+const cardContent = [];
 
-`;
+// create an array with dom elements to display
+for (let i = 0; i < teamArray.length; i++) {
+	let card = createCard(teamArray, i);
+	// display cards in DOM
+	container.appendChild(card);
+}
+
+/*
+FUNCTIONS DEFINITION
+*/
+
+function createCard(array, index) {
+	let card = document.createElement("div");
+	card.className = "card";
+	let member = array[index];
+	cardContent[index] = `
+		<div class="name">${member.name}</div>
+		<div class="role">${member.role}</div>
+		<div class="photo">${member.photo}</div>
+	`;
+	card.innerHTML = cardContent[index];
+
+	return card;
+}
