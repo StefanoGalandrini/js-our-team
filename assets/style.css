@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 *,
 *::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+:root {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+main {
+	height: 100vh;
+	background-color: rgb(40, 40, 40);
+}
+
+main h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+main h2 {
+	width: 50%;
+	margin-inline: auto;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	margin-bottom: 3rem;
+}
+
+main .container {
+	max-width: 80vw;
+	margin-inline: auto;
 }

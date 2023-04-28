@@ -37,34 +37,34 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 // create array of objects
 const teamArray = [
 	{
-		name: "Paul Hewson",
-		role: "Frontman of U2",
-		photo: "1_bono.jpg",
+		name: "Wayne Barnett",
+		role: "Founder & CEO",
+		photo: "wayne-barnett-founder-ceo.jpg",
 	},
 	{
-		name: "Taylor Swift",
-		role: "Singer and songwriter",
-		photo: "2_taylor.jpg",
+		name: "Angela Caroll",
+		role: "Chief Editor",
+		photo: "angela-caroll-chief-editor.jpg",
 	},
 	{
-		name: "Bruce Springsteen",
-		role: "Born in the U.S.A.",
-		photo: "3_bruce.jpg",
+		name: "Walter Gordon",
+		role: "Office Manager",
+		photo: "walter-gordon-office-manager.jpg",
 	},
 	{
-		name: "Billie Eilish",
-		role: "Strange but great",
-		photo: "4_billie.jpg",
+		name: "Angela Lopez",
+		role: "Social Media Manager",
+		photo: "angela-lopez-social-media-manager.jpg",
 	},
 	{
-		name: "Bon Dylan",
-		role: "Poet and Nobel Price winner",
-		photo: "5_bob.jpg",
+		name: "Scott Estrada",
+		role: "Developer",
+		photo: "scott-estrada-developer.jpg",
 	},
 	{
-		name: "Mariah Carey",
-		role: "Amazing angelic voice",
-		photo: "6_mariah",
+		name: "Barbara Ramos",
+		role: "Graphic Designer",
+		photo: "barbara-ramos-graphic-designer.jpg",
 	},
 ];
 
@@ -75,3 +75,13 @@ for (let i = 0; i < teamArray.length; i++) {
 	let member = teamArray[i];
 	console.log(`${member.name}, ${member.role} - ${member.photo}`);
 }
+
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+// declare DOM variables
+const container = document.querySelector(".container");
+let card = document.createElement("div");
+let cardContent = `
+
+`;
