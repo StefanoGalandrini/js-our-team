@@ -34,3 +34,37 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 
 // MILESTONE 0
+const teamArray = [
+	{
+		name: "Paul Hewson",
+		role: "Frontman of U2",
+		photo: "1_bono.jpg",
+	},
+	{
+		name: "Taylor Swift",
+		role: "Singer and songwriter",
+		photo: "2_taylor.jpg",
+	},
+	{
+		name: "Bruce Springsteen",
+		role: "Born in the U.S.A.",
+		photo: "3_bruce.jpg",
+	},
+	{
+		name: "Billie Eilish",
+		role: "Strange but great",
+		photo: "4_billie.jpg",
+	},
+	{
+		name: "Bon Dylan",
+		role: "Poet and Nobel Price winner",
+		photo: "5_bob.jpg",
+	},
+	{
+		name: "Mariah Carey",
+		role: "Amazing angelic voice",
+		photo: "6_mariah",
+	},
+];
+
+console.log(teamArray);
