@@ -83,6 +83,8 @@ for (let i = 0; i < teamArray.length; i++) {
 const container = document.querySelector(".container");
 const cardContent = [];
 
+container.innerHTML = "";
+
 // create an array with dom elements to display
 for (let i = 0; i < teamArray.length; i++) {
 	let card = createCard(teamArray, i);
@@ -98,10 +100,11 @@ function createCard(array, index) {
 	let card = document.createElement("div");
 	card.className = "card";
 	let member = array[index];
+	let src = `../img/${member.photo}`;
 	cardContent[index] = `
-		<div class="name">${member.name}</div>
-		<div class="role">${member.role}</div>
-		<div class="photo">${member.photo}</div>
+	<img class="photo" src="${src}"></img>
+	<div class="name">${member.name}</div>
+	<div class="role">${member.role}</div>
 	`;
 	card.innerHTML = cardContent[index];
 

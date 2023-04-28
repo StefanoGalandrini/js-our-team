@@ -10,18 +10,19 @@
 
 :root {
 	font-family: 'Open Sans', sans-serif;
-	color: white;
+	color: #333333;
 }
 
 main {
 	height: 100vh;
-	background-color: rgb(40, 40, 40);
+	background-color: rgb(200, 190, 170);
 }
 
 main h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.5rem;
+	font-weight: 700;
 	margin-bottom: 1rem;
 }
 
@@ -30,13 +31,13 @@ main h2 {
 	margin-inline: auto;
 	text-align: center;
 	font-size: 1rem;
-	font-weight: 300;
+	font-weight: 500;
 	line-height: 2.5rem;
 	margin-bottom: 3rem;
 }
 
 main .container {
-	max-width: 80vw;
+	max-width: 70vw;
 	height: 50vh;
 	margin-inline: auto;
 	display: flex;
@@ -47,15 +48,16 @@ main .container {
 }
 
 main .card {
-	flex: 0 0 33%;
-	background-color: blanchedalmond;
+	flex: 0 0 30%;
+	background-color: rgb(240, 240, 240);
 	color: #333333;
 	padding: 1rem;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 .card .name {
@@ -67,6 +69,9 @@ main .card {
 }
 
 .card .photo {
-	font-weight: 300;
-	color: rgb(0, 36, 114);
+	width: 90%;
+	aspect-ratio: 10 / 12;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 1rem;
 }
